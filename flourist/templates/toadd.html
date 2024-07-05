@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to Add</title>
+</head>
+<body>
+    {% block content %}
+    <h1>Insert data into table</h1>
+    <form name="flower" action="" method="POST" enctype="multipart/form-data"> {% csrf_token %}
+        <label value="Title">Title:</label>
+        <input type="text" name="title" placeholder="Title"/><br></br>
+        <label value="Description">Description</label>
+        <textarea name="description" placeholder="Description"></textarea><br></br>
+        <input type="file" name="image"/><br></br>
+        <input type="submit" value="submit"/>
+    </form>
+    
+    {% endblock content %}
+</body>
+</html>
